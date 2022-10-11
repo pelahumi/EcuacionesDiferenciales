@@ -7,7 +7,7 @@ def ejercicio1():
     y = sympy.Function("y")
 
     #Definimos la ecuación 
-    f = (x**2*y - y) / (y + 1)
+    f = (x**2*y(x) - y(x)) / (y(x) + 1)
 
     #Usamos la funcion que creamos para resolver las EDO
     print(resolver(f))
