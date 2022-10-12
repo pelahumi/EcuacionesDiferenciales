@@ -13,4 +13,15 @@ def resolver(f):
 
     return solucion
 
+def condicion_inicial(f, a, b):
+
+    x = sympy.Symbol("x")
+    y = sympy.Function("y")
+
+    #Definimos la condicion inicial
+    CI = {y(a) : b}
+    
+    solucion = sympy.dsolve(f, y(x), ics= CI)
+
+    return solucion
     
