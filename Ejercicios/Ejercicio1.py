@@ -11,7 +11,7 @@ def ejercicio1():
 
     #Usamos la funcion que creamos para resolver las EDO
     print("La solución general es la siguinte: \n")
-    print(resolver(f))
+    pprint(resolver(f))
     print("\n")
     print("La solución con condición incial y(3) = -1: \n")
     try:
