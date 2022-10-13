@@ -1,5 +1,6 @@
 #Importamos la librería que nos ayudará a resolver las EDO
 import sympy
+from pprint import pprint
 
 def resolver(f):
     #El parámetro f será la ecuación a resolver
@@ -23,5 +24,6 @@ def condicion_inicial(f, a, b):
     
     solucion = sympy.dsolve(f, y(x), ics= CI)
 
-    return solucion
+
+    return pprint(solucion)
     

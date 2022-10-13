@@ -14,6 +14,13 @@ def ejercicio1():
     print(resolver(f))
     print("\n")
     print("La solución con condición incial y(3) = -1: \n")
+    try:
+        condicion_inicial(f, 3, -1)
+    except ValueError:
+        print("Hay un logaritmo de -1 en la solución")
+    else:
+        pass
     print(condicion_inicial(f, 3, -1))
+
 
 
