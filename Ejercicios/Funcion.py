@@ -2,6 +2,7 @@
 import sympy
 from pprint import pprint
 import numpy as np
+import matplotlib.pyplot as plt
 
 def resolver(f):
     #El parámetro f será la ecuación a resolver
@@ -36,3 +37,14 @@ def resolver_y_no_despejada(f, x, y):
     solucion = sympy.dsolve(f)
 
     return solucion
+
+def grafica():
+    t = np.linspace(-5, 5, 500)
+    fig, ax = plt.subplots()
+    for C in range(-4, 4, 1):
+        y = C*np.sqrt(t) + t**2
+        ax.plot(t, y, label= "Para $C=%s$" %C)
+        plt.xlim(-5, 7)
+        plt.legend(loc="best")
+        plt.savefig("Ejercicios/Img/Familia_soluciones.png")
+    
