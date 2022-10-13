@@ -9,4 +9,5 @@ def ejercicio4():
 
     print("La solucion es la siguiente: ")
     pprint(resolver_y_no_despejada(ecuacion, t, y))
+    grafica()
 
