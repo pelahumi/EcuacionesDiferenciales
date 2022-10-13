@@ -25,5 +25,5 @@ def condicion_inicial(f, a, b):
     
     solucion = sympy.dsolve(f, y(x), ics= CI)
 
-    return pprint(solucion)
+    return solucion
     
