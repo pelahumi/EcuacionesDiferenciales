@@ -1,3 +1,4 @@
+from Ejercicios.Ejercicio4 import ejercicio4
 from Ejercicios.helpers import *
 from Ejercicios.Ejercicio1 import *
 from Ejercicios.Ejercicio2 import *
@@ -31,7 +32,8 @@ def lanzador():
             ejercicio3()
 
         if opcion == "4":
-            pass
+            ejercicio4()
+            
         if opcion == "6":
             print("Saliendo...\n")
             break
