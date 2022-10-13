@@ -7,5 +7,5 @@ def ejercicio3():
 
     f = sympy.Eq(y(t).diff() -y(t) / (t - 2), 2*(t - 2)**2)
 
-    print(resolver(f))
+    pprint(resolver(f))
     

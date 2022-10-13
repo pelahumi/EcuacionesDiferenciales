@@ -27,3 +27,12 @@ def condicion_inicial(f, a, b):
 
     return solucion
     
+def resolver_y_no_despejada(f, x, y):
+
+    x = sympy.Symbol("x")
+    y = sympy.Function("y")
+    
+    #Usamos la función para resolver la ecuación
+    solucion = sympy.dsolve(f)
+
+    return solucion
