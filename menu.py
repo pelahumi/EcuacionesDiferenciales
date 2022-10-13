@@ -1,8 +1,9 @@
-from Ejercicios.Ejercicio4 import ejercicio4
 from Ejercicios.helpers import *
-from Ejercicios.Ejercicio1 import *
-from Ejercicios.Ejercicio2 import *
-from Ejercicios.Ejercicio3 import *
+from Ejercicios.Funcion import *
+from Ejercicios.Ejercicio1 import ejercicio1
+from Ejercicios.Ejercicio2 import ejercicio2
+from Ejercicios.Ejercicio3 import ejercicio3
+from Ejercicios.Ejercicio4 import ejercicio4
 
 def lanzador():
     while True:
@@ -34,7 +35,7 @@ def lanzador():
         if opcion == "4":
             ejercicio4()
             
-        if opcion == "6":
+        if opcion == "5":
             print("Saliendo...\n")
             break
 
